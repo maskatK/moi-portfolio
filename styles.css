@@ -1,0 +1,120 @@
+body {
+    margin: 60px auto;
+    max-width: 100vw;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  h1 {
+    font-size: 74px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 24px;
+    opacity: 0.7;
+  }
+  .grey {
+    opacity: 0.7;
+  }
+  small {
+    font-size: 14px;
+  }
+  .link {
+    display: flex;
+    margin-top: 40px;
+    justify-content: right;
+  }
+  .link a {
+    margin: 20px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  .homepage-link {
+    color: var(--primary-color);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+  }
+  .paragraf {
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
+  }
+  .paragraf p {
+    margin: 10px;
+    width: 40vw;
+  }
+  p {
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .emeil {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    text-decoration: none;
+  }
+.center {
+  text-align: center;
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 24px;      
+  }
+  h2 {
+    font-size: 20;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .link {    
+margin-top: 10px;    
+}
+.link a {
+margin: 5px;
+padding: 5px 3px;
+}
+}
+@media (max-width: 414px) {
+  h1 {
+    font-size: 28px;  
+  }
+  h2 {
+      font-size: 24px;
+    }    
+  h3 {
+    font-size: 20px;
+  }
+  .link {    
+margin-top: 12px;    
+}
+.link a {
+margin: 6px;
+padding: 6px 4px;
+}
+}
+@media (max-width: 280px) {
+  h1 {
+    font-size: 20px;      
+  }
+  h3 {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 16;
+  }
+  .link {    
+margin-top: 6px;    
+}
+.link a {
+margin: 2px;
+padding: 2px 1px;
+}
+}
+  
