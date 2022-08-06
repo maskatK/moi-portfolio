@@ -5,12 +5,16 @@ body {
   }
   
   h1 {
+    font-family: 'Ultra', Times;
     font-size: 74px;
   }
   h2 {
+    font-family: "Times New Roman", Times;
+    font-weight: bold;
     font-size: 48px;
   }
   h3 {
+    font-family: 'Vidaloka', serif;
     font-size: 24px;
     opacity: 0.7;
   }
