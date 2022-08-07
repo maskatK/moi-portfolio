@@ -125,3 +125,13 @@ padding: 2px 1px;
   text-align: center;
   margin: 20px 20px;
 }
+.fa-brands, .fa-solid {
+  opacity: 0.7;
+}
+.footer {
+  background: #F8F9FA;
+  margin: 0 20px;
+}
+i {
+  margin: 0 20px;
+}
