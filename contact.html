@@ -3,25 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Information of front-end development Kateryna Zhabrovets." />
+    <meta name="description" content="Resume and portfolio of front-end developer Kateryna Zhabrovets. Development of websites, landing pages, web pages" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/08c9b7b9ed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ultra&family=Vidaloka">
-    <title>Contact of Kateryna Zhabrovets</title>
+    <script src="https://kit.fontawesome.com/08c9b7b9ed.js" crossorigin="anonymous"></script>
+    <title>Kateryna Zhabrovets || Front-end développement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <style>
       :root {
         --primary-color: #36ae7c;
         --secondary-color: #f5f2fe;
         --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
       }
-      .homepage-link {
-        color: var(--primary-color);
+      .contact-link {
+        background: var(--primary-color);
+        box-shadow: var(--box-shadow);
+        color: white;
       }
-      p {
-        background: var(--secondary-color);
+      .about-link {
+        color: #eb5353;
+        border: 1px solid var(--primary-color);
+        box-shadow: var(--box-shadow);
       }
-      @media (max-width: 375px) {
+      .look-link {
+        background: var(--primary-color);
+        color: white;
+      }
+      
+     @media (max-width: 375px) {
       h1 {
         font-size: 24px;      
       }
@@ -38,10 +48,12 @@
    }
    @media (max-width: 414px) {
       h1 {
-        font-size: 28px;      
+        font-size: 28px;   
+        text-align: center;   
       }
       h3 {
         font-size: 20px;
+        text-align: center; 
       }
       .link {    
     margin-top: 12px;    
@@ -50,7 +62,7 @@
     margin: 6px;
     padding: 6px 4px;
    }
-   
+      
    }
    @media (max-width: 280px) {
       h1 {
@@ -63,7 +75,8 @@
         font-size: 16;
       }
       .link {    
-    margin-top: 6px;    
+    margin-top: 6px;  
+    text-align: center;  
   }
   .link a {
     margin: 2px;
@@ -73,40 +86,51 @@
     </style>
   </head>
   <body>
-    <a href="index.html" class="homepage-link">Back to homepage</a>
-    <h1 class="center">About Zhabrovets Kateryna</h1>
-    <h3 class="center">front-end developer, live in Alançon, France</h3>
-    <div class="paragraf">
-      <p>
-        Welcome. My name is Kateryna Zhabrovets, and I am studying coding at
-        SheCodes courses. I am 44 years old, and I have a lot of experience in
-        other professions. I worked as a teacher for 12 years, teaching the
-        Ukrainian language at school. I worked as a literary editor for 12
-        years. I have 11 years of freelance experience as a copywriter.
-        <br />
-        <br />
-        In February 2022, my plans for the future were broken by Russia's attack
-        on my country. My children and I had to go to live in France. I suddenly
-        had a lot of free time, which I decided to spend on learning coding.
-      </p>
-      <p>
-        Once upon a time, 20 years ago, I already started such training. But
-        then I specialized in writing and editing texts, and I couldn't get used
-        to coding. I worked a lot, had enough clients and didn't have time to do
-        anything else.
-        <br />
-        <br />
-        Now I can finally realize my old desire and I hope that all my previous
-        experience will help me in this. Past proofreading experience helps you
-        find code errors and fix them. At the same time, I'm learning French and
-        improving my English ☺ I really want to master the theory and try my
-        hand at real projects.
-      </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <div>
+    <nav class="navbar navbar-expand-lg  bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#">Kateryna Zhabrovets</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html#contactes">Contact me</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-    <div id="contactes">
-      <h2 class="center">💌 Contact Kateryna for website development</h2>
-      <a href="mailto:katmaszh@gmail.com" class="emeil">katmaszh@gmail.com</a>
-    </div>
-    <i class="fa-brands fa-instagram"></i>
+    <div class="container">
+    <h1 class="center my-5">Let's get in touch!</h1>
+    <h3 class="center">Email</h3>
+    <p class="center">
+      <a href="mailto:katmaszh@gmail.com">
+      katmaszh@gmail.com
+    </a>
+    </p>
+    <h3 class="center">LinkedIn</h3>
+    <p class="center">
+      <a href="http://www.linkedin.com/in/kateryna-zhabrovets/" target="_blank">
+      kateryna-zhabrovets
+    </a>
+    </p>
+    <h3 class="center">Facebook</h3>
+    <p class="center">
+      <a href="http://www.facebook.com/profile.php?id=100002128074742" target="_blank">
+        kateryna-zhabrovets
+      </a>
+      
+    </p>
+  </div>
   </body>
 </html>
