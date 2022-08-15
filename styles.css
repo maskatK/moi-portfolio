@@ -5,8 +5,8 @@ body {
   }
   
   h1 {
-    font-family: 'Ultra', Times;
-    font-size: 74px;
+    font-family: Times;
+     font-size: 4vw !important;
   }
   h2 {
     font-family: "Times New Roman", Times;
@@ -31,15 +31,21 @@ body {
   .link {
     display: flex;
     margin-top: 40px;
-    justify-content: right;
+    
+    
   }
   .link a {
     margin: 20px;
-    padding: 20px 15px;
+       
+  }
+  
+  .link a, .contact a {
+    padding: 20px 15px !important;
     border-radius: 10px;
     text-decoration: none;
     text-transform: capitalize;
   }
+ 
   .homepage-link {
     color: var(--primary-color);
     text-align: center;
@@ -115,59 +121,6 @@ footer .contact-box {
   background: #F8F9FA;
   padding: 30px 80px;
 }
-@media (max-width: 375px) {
-  h1 {
-    font-size: 24px;      
-  }
-  h2 {
-    font-size: 20;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  .link {    
-margin-top: 10px;    
-}
-.link a {
-margin: 5px;
-padding: 5px 3px;
-}
-}
-@media (max-width: 414px) {
-  h1 {
-    font-size: 28px;  
-  }
-  h2 {
-      font-size: 24px;
-    }    
-  h3 {
-    font-size: 20px;
-  }
-  .link {    
-margin-top: 12px;    
-}
-.link a {
-margin: 6px;
-padding: 6px 4px;
-}
-}
-@media (max-width: 280px) {
-  h1 {
-    font-size: 20px;      
-  }
-  h3 {
-    font-size: 12px;
-  }
-  h2 {
-    font-size: 16;
-  }
-  .link {    
-margin-top: 6px;    
-}
-.link a {
-margin: 2px;
-padding: 2px 1px;
-}
-}
 
+   
 

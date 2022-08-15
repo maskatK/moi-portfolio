@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume and portfolio of front-end developer Kateryna Zhabrovets. Development of websites, landing pages, web pages" />
+    <meta name="description" content="About Kateryna Zhabrovets, front-end developer from Ukraine/France" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ultra&family=Vidaloka">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB Garamond&family=Vidaloka">
     <script src="https://kit.fontawesome.com/08c9b7b9ed.js" crossorigin="anonymous"></script>
-    <title>Kateryna Zhabrovets || Front-end développement</title>
+    <title>About Kateryna Zhabrovets</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <style>
       :root {
@@ -20,7 +20,7 @@
         background: var(--primary-color);
         box-shadow: var(--box-shadow);
         color: white;
-      }
+        }
       .about-link {
         color: #eb5353;
         border: 1px solid var(--primary-color);
@@ -30,25 +30,16 @@
         background: var(--primary-color);
         color: white;
       }
-      
-     @media (max-width: 375px) {
-      h1 {
-        font-size: 24px;      
+      .name_autor {
+        text-align: right;
       }
-      h3 {
-        font-size: 16px;
-      }
-      .link {    
-    margin-top: 10px;    
+      .link a {
+    margin: 20px 0;
+       
   }
-  .link a {
-    margin: 5px;
-    padding: 5px 3px;
-   }
-   }
-   @media (max-width: 414px) {
+   @media (max-width: 575px) {
       h1 {
-        font-size: 28px;   
+        font-size: 10vw !important;  
         text-align: center;   
       }
       h3 {
@@ -57,70 +48,67 @@
       }
       .link {    
     margin-top: 12px;    
+    justify-content: center;
+    
   }
   .link a {
     margin: 6px;
     padding: 6px 4px;
+    
    }
-      
-   }
-   @media (max-width: 280px) {
-      h1 {
-        font-size: 20px;      
+   
+   .name_autor {
+        text-align: center;
       }
-      h3 {
-        font-size: 12px;
-      }
-      h2 {
-        font-size: 16;
-      }
-      .link {    
-    margin-top: 6px;  
-    text-align: center;  
-  }
-  .link a {
-    margin: 2px;
-    padding: 2px 1px;
+    .col-6 {
+      width: 80%;
+    }
    }
-   }
-    </style>
+   
+   </style>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <div>
-    <nav class="navbar navbar-expand-sm shadow p-2 mb-2 bg-body">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-5" href="index.html">
-           <img src="images/logo.jpg" class="logo d-none d-md-block" alt="Zhabrovets logo" /> 
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse me-5 justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" title="Homepage" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" title="About Kateryna" href="about.html">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" title="Kateryna's works" href="work.html">My work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" title="Contact Zhabrovets" href="contact.html">Contact me</a>
-              </li>
-              </ul>
+      <nav class="navbar navbar-expand-sm shadow p-2 mb-2 bg-body">
+          <div class="container-fluid">
+            <a href="index.html">
+              <img src="images/logo_min.jpg" class="logo d-block d-md-none float-start" alt="Zhabrovets logo minimal" />
+              </a>
+            <a class="navbar-brand ms-5" href="index.html">
+             <img src="images/logo.jpg" class="logo d-none d-md-block" alt="Zhabrovets logo" /> 
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5 justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" title="Homepage" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" title="About Kateryna" href="about.html">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" title="Kateryna's works" href="work.html">My work</a>
+                </li>
+                </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
     
         <div class="clearfix mt-5 mx-5">
-          <img src="images/unnamed.webp" class="col-3 mb-5 ms-5 rounded float-end shadow bg-body d-none d-md-block" alt="Zhabrovets Kateryna, front-end developer" />
+          <img src="images/foto2.jpeg" class="col-3 mb-5 ms-5 rounded float-end shadow bg-body d-none d-sm-block" alt="Zhabrovets Kateryna, front-end developer" />
                             
                     <h1> Hi, I am Zhabrovets Kateryna</h1>
                     <h3>front-end developer, live in Alançon, France</h3>
+                    <div class="row ">
+                      <div class="link d-flex d-md-none">
+                        <a href="contact.html" class="btn contact-link">Contact me</a>
+                      </div>
+                    </div>
               <div class="paragraf mb-5">
                     <p>
         Welcome. My name is Kateryna Zhabrovets, and I am studying coding at
@@ -151,13 +139,45 @@
     </div>
 </div>
     </div>
-   <div class="d-grid gap-2 col-3 mx-auto">
-         <a href="" class="btn btn-secondary btn-lg">See my projects</a>
+   
+    <footer>
+      <div class="contact-box justify-content-between my-5 d-none d-md-flex">
+        <div class="col-6">
+        <h4>
+          Work Inquiry
+        </h4>
+        <p class="text-muted">
+          Let's work together
+        </p>
+      </div>
+      <div class="col-6 text-end contact">
+        <a href="mailto:katmaszh@gmail.com" title="Email Kateryna Zhabrovets" class="btn contact-link mt-3">Contact me</a>
+      </div>
+      </div>
+        <div class="container-fluid mt-5 mb-5">
+          <nav class="navbar">
+          <form class="container-fluid justify-content-center">
+                      
+          <a href="http://www.linkedin.com/in/kateryna-zhabrovets/" title="Linkedin Kateryna" target="_blank">
+            <i class="social-link fa-brands fa-linkedin fa-4x"></i>
+          </a>
+               
+          <a href="https://github.com/maskatK" title="Github profile" target="_blank">
+            <i class="social-link fa-brands fa-square-git fa-4x"></i>
+          </a>
+        
+        
+          <a href="http://www.facebook.com/profile.php?id=100002128074742" title="Facebook Zhabrovets" target="_blank">
+            <i class="social-link fa-brands fa-square-facebook fa-4x"></i>
+          </a>
+             
+        </form >
+      </nav>
         </div>
-    <div id="contactes">
-      <h2 class="center">💌 Contact Kateryna for website development</h2>
-      <a href="mailto:katmaszh@gmail.com" class="emeil">katmaszh@gmail.com</a>
-    </div>
-    <i class="fa-brands fa-instagram"></i>
+        <div class="container-fluid text-center mb-5 footer">
+          
+          <a href="index.html" class="autor">© Kateryna Zhabrovets</a>
+        </div>
+    </footer>
   </body>
 </html>

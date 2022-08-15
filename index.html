@@ -6,7 +6,7 @@
     <meta name="description" content="Resume and portfolio of front-end developer Kateryna Zhabrovets. Development of websites, landing pages, web pages" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ultra&family=Vidaloka">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB Garamond&family=Vidaloka">
     <script src="https://kit.fontawesome.com/08c9b7b9ed.js" crossorigin="anonymous"></script>
     <title>Kateryna Zhabrovets || Front-end développement</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -20,7 +20,7 @@
         background: var(--primary-color);
         box-shadow: var(--box-shadow);
         color: white;
-      }
+        }
       .about-link {
         color: #eb5353;
         border: 1px solid var(--primary-color);
@@ -30,25 +30,16 @@
         background: var(--primary-color);
         color: white;
       }
-      
-     @media (max-width: 375px) {
-      h1 {
-        font-size: 24px;      
-      }
-      h3 {
-        font-size: 16px;
+      .name_autor {
+        text-align: right;
       }
       .link {    
-    margin-top: 10px;    
-  }
-  .link a {
-    margin: 5px;
-    padding: 5px 3px;
-   }
-   }
-   @media (max-width: 414px) {
+      
+    justify-content: end;
+      }
+   @media (max-width: 575px) {
       h1 {
-        font-size: 28px;   
+        font-size: 10vw !important;  
         text-align: center;   
       }
       h3 {
@@ -57,32 +48,22 @@
       }
       .link {    
     margin-top: 12px;    
+    justify-content: center;
+    
   }
   .link a {
     margin: 6px;
     padding: 6px 4px;
    }
-    
-   }
-   @media (max-width: 280px) {
-      h1 {
-        font-size: 20px;      
+   
+   .name_autor {
+        text-align: center;
       }
-      h3 {
-        font-size: 12px;
-      }
-      h2 {
-        font-size: 16;
-      }
-      .link {    
-    margin-top: 6px;  
-    text-align: center;  
-  }
-  .link a {
-    margin: 2px;
-    padding: 2px 1px;
+    .col-6 {
+      width: 80%;
+    }
    }
-   }
+   
     </style>
   </head>
   <body>
@@ -90,9 +71,13 @@
     <div>
     <nav class="navbar navbar-expand-sm shadow p-2 mb-2 bg-body">
         <div class="container-fluid">
+          <a href="index.html">
+            <img src="images/logo_min.jpg" class="logo d-block d-md-none float-start" alt="Zhabrovets logo minimal" />
+            </a>
           <a class="navbar-brand ms-5" href="index.html">
            <img src="images/logo.jpg" class="logo d-none d-md-block" alt="Zhabrovets logo" /> 
           </a>
+          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -107,9 +92,6 @@
               <li class="nav-item">
                 <a class="nav-link" title="Kateryna's works" href="work.html">My work</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" title="Contact Zhabrovets" href="contact.html">Contact me</a>
-              </li>
               </ul>
           </div>
         </div>
@@ -118,18 +100,19 @@
     <div class="container-fluid ">
         <div class="row justify-content-evenly mx-5 mt-5">
           <div class="col d-none d-sm-block">
-            <img src="images/unnamed.webp" alt="Front-end developper Kateryna Zhabrovets" class="img-fluid rounded shadow p-1 border float-start" />
+            <img src="images/unnamed.webp" alt="Front-end developper Kateryna Zhabrovets" class="img-fluid rounded shadow p-0 border float-start" />
           </div>
-          <div class="col-6 text-end">
+          <div class="col-6 name_autor">
             <h1>Kateryna Zhabrovets</h1>
+            <span>
             <h3>front-end developer </h3>
+            </span>
             <h3>based in France</h3>
             </div>
         </div>
-            <div class="row justify-content-evenly mx-5">
+            <div class="row  mx-5">
               <div class="link">
-                <a href="contact.html" class="contact-link">Contact me</a>
-                <a href="about.html" class="about-link">About me</a>
+                <a href="contact.html" class="btn contact-link">Contact me</a>
               </div>
             </div>
     </div>
@@ -137,12 +120,13 @@
           <h3>My projects and works</h3>
       </div>
     <div class="container-fluid">
-        <div class="row mx-5 mt-5">
+        <div class="row mx-5 my-5 pb-5 gx-5">
             <div class="col">
                 <h2>Development of a website about the weather</h2>
                 <p class="text ps-0 mt-5 mb-5 text-muted">With the help of this weather site, you can find out the temperature, humidity, wind speed in any city. Just type the name into the search and get the results! The site also determines the weather for your location.
                 </p>
-                <button class="btn look-link shadow btn-lg">Look</button>
+             <a href="https://peaceful-bienenstitch-e8a945.netlify.app" class="btn about-link shadow"> Look</a>
+             
             </div>
             <div class="col d-none d-md-block">
               <img src="images/img_weather2.JPG" alt="Website about the weather" class="img-fluid rounded shadow"/>
@@ -150,7 +134,7 @@
         </div>
         </div>
     <div class="container-fluid">
-        <div class="row mx-5 mt-5">
+        <div class="row mx-5 mt-5 gx-5">
             <div class="col d-none d-md-block">
               <img src="images/img_like2.JPG" alt="Website about ice cream" class="img-fluid rounded shadow" />
             </div>
@@ -158,13 +142,13 @@
                 <h2>Development of a website about food</h2>
                 <p class="text pe-0 mt-5 mb-5 text-muted">Before you is a site that talks about ice cream - the favorite food of front-end developer Kateryna Zhabrovets. You will learn how to make ice cream at home and how to make it incredibly tasty!
                 </p>
-                <button class="btn look-link shadow btn-lg">Look</button>
+                <a href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/863/578/original/ice_cream.html?1652707830" class="btn about-link shadow">Look</a>
             </div>
         </div>
     </div>
     <footer>
       <div class="contact-box justify-content-between my-5 d-none d-md-flex">
-        <div>
+        <div class="col-6">
         <h4>
           Work Inquiry
         </h4>
@@ -172,24 +156,33 @@
           Let's work together
         </p>
       </div>
-      <div>
-        <a href="mailto:katmaszh@gmail.com" title="Email Kateryna Zhabrovets" class="btn about-link">Contact me</a>
+      <div class="col-6 text-end contact">
+        <a href="mailto:katmaszh@gmail.com" title="Email Kateryna Zhabrovets" class="btn contact-link mt-3">Contact me</a>
       </div>
       </div>
-        <div class="container-fluid text-center mt-5 mb-5">
+        <div class="container-fluid mt-5 mb-5">
+          <nav class="navbar">
+          <form class="container-fluid justify-content-center">
+                      
           <a href="http://www.linkedin.com/in/kateryna-zhabrovets/" title="Linkedin Kateryna" target="_blank">
             <i class="social-link fa-brands fa-linkedin fa-4x"></i>
           </a>
+               
           <a href="https://github.com/maskatK" title="Github profile" target="_blank">
             <i class="social-link fa-brands fa-square-git fa-4x"></i>
           </a>
+        
+        
           <a href="http://www.facebook.com/profile.php?id=100002128074742" title="Facebook Zhabrovets" target="_blank">
             <i class="social-link fa-brands fa-square-facebook fa-4x"></i>
           </a>
+             
+        </form >
+      </nav>
         </div>
         <div class="container-fluid text-center mb-5 footer">
-          <i class="fa-solid fa-copyright copy"></i>
-          <a href="#" class="autor">Kateryna Zhabrovets</a>
+          
+          <a href="index.html" class="autor">© Kateryna Zhabrovets</a>
         </div>
     </footer>
   </body>
