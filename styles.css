@@ -117,6 +117,14 @@ footer .autor {
 footer .autor:hover {
   color: gray;
 }
+footer .github {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+footer .github:hover {
+  color: rgb(248, 88, 123);
+}
 footer .contact-box {
   background: #F8F9FA;
   padding: 30px 80px;
